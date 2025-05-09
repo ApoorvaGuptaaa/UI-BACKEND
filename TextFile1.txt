@@ -1,0 +1,59 @@
+BASIC EXPLANATION
+
+1. Builder Pattern
+Analogy: Imagine you want to build a LEGO house. Instead of building it all at once, you build it step by step: first the walls, then the roof, and finally the doors. The Builder pattern helps you build complex things step by step.
+
+2. Factory Pattern
+Analogy: Think of a toy factory that makes different kinds of toys. You tell the factory what toy you want (like a car or a robot), and it makes it for you. The Factory pattern helps you create different objects without knowing exactly how they are made.
+
+3. Singleton Pattern
+Analogy: Imagine you have a special toy that you only want one of, like a unique action figure. You make sure there's only one of it in your toy box. The Singleton pattern ensures there's only one instance of a particular object.
+
+4. Adapter Pattern
+Analogy: Suppose you have a toy car that uses a different type of battery than the ones you have. You use an adapter to make the batteries fit. The Adapter pattern helps different things work together even if they weren't designed to.
+
+5. Bridge Pattern
+Analogy: Think of a remote-controlled car. The remote is the controller, and the car is the thing being controlled. You can change the car or the remote independently. The Bridge pattern separates the control from the thing being controlled.
+
+6. Façade Pattern
+Analogy: Imagine you have a big toy box with lots of different toys. Instead of opening the box and searching for each toy, you have a friend who knows where everything is and can get the toys for you. The Façade pattern provides a simple way to interact with a complex system.
+
+7. Chain of Responsibility Pattern
+Analogy: Think of a relay race where each runner passes the baton to the next runner. If the first runner can't finish, they pass the baton to the next one. The Chain of Responsibility pattern passes a request along a chain until someone can handle it.
+
+8. Command Pattern
+Analogy: Imagine you have a remote control with buttons for different commands like turning on the TV or playing music. Each button does a specific action. The Command pattern turns requests into objects so you can handle them flexibly.
+
+9. Observer Pattern
+Analogy: Think of a group of friends who all want to know when a new game is released. One friend finds out and tells everyone else. The Observer pattern notifies multiple objects when something changes.
+
+
+
+IDENTIFICATION
+
+1. Builder Pattern
+Identification: Look for a class that constructs a complex object step by step. You'll often see methods like BuildPartA(), BuildPartB(), and a GetResult() method that returns the final object.
+
+2. Factory Pattern
+Identification: Look for a method or class responsible for creating objects. This method usually returns an interface or abstract class rather than a concrete class. The creation logic is encapsulated in one place.
+
+3. Singleton Pattern
+Identification: Look for a class with a private constructor and a static method that returns an instance of the class. There will usually be a static variable holding the single instance.
+
+4. Adapter Pattern
+Identification: Look for a class that wraps another class to provide a different interface. The adapter class will implement the target interface and delegate calls to the adaptee class.
+
+5. Bridge Pattern
+Identification: Look for a class hierarchy where an abstraction is separated from its implementation. You'll see an abstract class or interface that has a reference to an implementor interface, allowing the two to vary independently.
+
+6. Façade Pattern
+Identification: Look for a class that provides a simplified interface to a complex subsystem. This class will have methods that internally call multiple methods from different classes in the subsystem.
+
+7. Chain of Responsibility Pattern
+Identification: Look for a series of handler classes, each with a method to handle a request and a reference to the next handler in the chain. The request is passed along the chain until a handler processes it.
+
+8. Command Pattern
+Identification: Look for classes that encapsulate a request as an object. You'll see a command interface with an Execute() method and concrete command classes implementing this interface.
+
+9. Observer Pattern
+Identification: Look for a subject class that maintains a list of observers and notifies them of changes. The observers implement an interface with an Update() method.
